@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="433.0" prefWidth="658.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <TextArea fx:id="folderTree" layoutX="14.0" layoutY="14.0" prefHeight="374.0" prefWidth="477.0" />
+        <Button layoutX="497.0" layoutY="229.0" mnemonicParsing="false" onAction="#addFile" prefHeight="25.0" prefWidth="148.0" text="Добавить файл" />
+        <TextField fx:id="directoryName" layoutX="502.0" layoutY="53.0" prefHeight="25.0" prefWidth="137.0" />
+        <Label layoutX="537.0" layoutY="30.0" text="Директория" />
+        <TextField fx:id="fileName" layoutX="502.0" layoutY="120.0" prefHeight="25.0" prefWidth="137.0" />
+        <Label layoutX="544.0" layoutY="95.0" text="Название" />
+        <Label fx:id="errorLabel" layoutX="250.0" layoutY="398.0" text="Добавлено" textAlignment="CENTER" textFill="RED">
+            <font>
+                <Font name="System Bold Italic" size="14.0" />
+            </font>
+        </Label>
+        <Button layoutX="497.0" layoutY="189.0" mnemonicParsing="false" onAction="#addDirectory" prefHeight="25.0" prefWidth="148.0" text="Добавить директорию" />
+    </children>
+</AnchorPane>
